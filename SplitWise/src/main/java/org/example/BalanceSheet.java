@@ -15,7 +15,7 @@ public class BalanceSheet {
             List<Split> splits) {
 
         for(Split split : splits) {
-        System.out.println("Spliting with user::"+split.getUser());
+        //System.out.println("Spliting with user::"+split.getUser());
             if(split.getUser().equals(paidBy))
                 continue;
 
@@ -31,9 +31,9 @@ public class BalanceSheet {
     }
 
     public void showBalances() {
-        System.out.println("Balances size::" +balances.size());
+        //System.out.println("Balances size::" +balances.size());
         for(User debtor : balances.keySet()) {
-        System.out.println("Balances");
+        //System.out.println("Balances");
 
             for(Map.Entry<User, Double> entry :
                     balances.get(debtor).entrySet()) {

@@ -52,7 +52,7 @@ private int id;
     ElevetorState elevetorState;
 
 private final TreeSet<Integer> up=new TreeSet<>();
-private final TreeSet<Integer> down =new TreeSet<>();
+private final TreeSet<Integer> down =new TreeSet<>((a,b)->b-a);
 
 public void addRequest(Request request){
 

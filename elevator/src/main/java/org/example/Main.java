@@ -16,10 +16,12 @@ public class Main {
         Request r1=new Request(3,8);
         Request r2=new Request(4,0);
         Request r3=new Request(1,5);
+        Request r4=new Request(5,3);
 
         requestController.submitRequest(r1);
         requestController.submitRequest(r2);
         requestController.submitRequest(r3);
+        requestController.submitRequest(r4);
 
         requestController.processAllElevators();
     }
